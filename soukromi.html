@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revizak — zásady ochrany soukromí</title>
+<style>
+  :root { --ink: #1c2126; --muted: #5c636b; --paper: #fbfaf7; --line: #ddd8ce; --amber: #b36a00; }
+  html { background: var(--paper); }
+  body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; color: var(--ink); line-height: 1.6; margin: 0; }
+  .page { max-width: 760px; margin: 0 auto; padding: 48px 24px 72px; }
+  .eyebrow { font-family: Consolas, monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); }
+  h1 { font-size: 36px; line-height: 1.15; margin: 6px 0 12px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; }
+  header { border-bottom: 3px solid var(--ink); padding-bottom: 20px; margin-bottom: 28px; }
+  .meta { color: var(--muted); font-size: 15px; margin: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; }
+  code { font-family: Consolas, monospace; font-size: 14px; }
+  a { color: var(--amber); }
+  footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <div class="eyebrow">Revizak</div>
+    <h1>Zásady ochrany soukromí</h1>
+    <p class="meta">Platné od 26. listopadu 2026</p>
+  </header>
+
+  <p>Revizak je desktopový program pro Windows, který si revizní technik spouští ve svém počítači. Tento dokument popisuje, jaké údaje Revizak zpracovává a co dělá s údaji z Google účtu.</p>
+
+  <h2>Kdo program provozuje</h2>
+  <p>Program vyvíjí MoravianIT. Kontakt: <a href="mailto:revizak.aplikace@gmail.com">revizak.aplikace@gmail.com</a></p>
+
+  <h2>Údaje v počítači technika</h2>
+  <p>Revizak ukládá údaje o klientech, objektech, revizích a zakázkách do databáze v počítači technika. Údaje nikam neodesílá, nemá vlastní server ani analytiku a autorům programu se k nim nedostanou. Za tyto údaje odpovídá technik, který program používá.</p>
+
+  <h2>Napojení na Google Kalendář</h2>
+  <p>Napojení je dobrovolné. Zapne se až ve chvíli, kdy se technik v Nastavení přihlásí svým Google účtem. Přihlášení probíhá v jeho běžném webovém prohlížeči přímo u Googlu, takže heslo k účtu Revizak nikdy nevidí.</p>
+
+  <h3>O jaká oprávnění Revizak žádá</h3>
+  <table>
+    <tr><th>Oprávnění</th><th>K čemu slouží</th></tr>
+    <tr><td><code>calendar.app.created</code></td><td>Založit samostatný kalendář „Revizak“ a spravovat události jen v něm. K ostatním kalendářům technika ani k jejich událostem přístup nemá.</td></tr>
+    <tr><td><code>openid</code>, <code>email</code></td><td>Zjistit e-mailovou adresu účtu, aby program ukázal, ke kterému účtu je připojený.</td></tr>
+  </table>
+
+  <h3>Co Revizak do kalendáře zapisuje</h3>
+  <p>Ke každému termínu revize nebo zakázky vytvoří událost. Ta obsahuje druh termínu, jméno klienta, název a adresu objektu, druh revize a u zakázky její stav a poznámku. Tyto události pak uchovává Google podle <a href="https://policies.google.com/privacy">zásad ochrany soukromí Googlu</a>, stejně jako ostatní kalendáře technika.</p>
+
+  <h3>Co Revizak ukládá u sebe</h3>
+  <ul>
+    <li>Přístupový token od Googlu. Je uložený v počítači technika a zašifrovaný prostředky Windows, takže ho nepřečte jiný uživatel počítače.</li>
+    <li>E-mailovou adresu připojeného účtu a identifikátor kalendáře „Revizak“.</li>
+  </ul>
+  <p>Údaje z Google účtu Revizak nepředává žádné třetí straně, nepoužívá je k reklamě ani k ničemu jinému než k zápisu termínů do kalendáře „Revizak“. Do svých záznamů o chodu programu nezapisuje jména, adresy ani tokeny.</p>
+  <p>Revizak dodržuje <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, včetně požadavků na omezené použití (Limited Use).</p>
+
+  <h3>Jak napojení zrušit</h3>
+  <ul>
+    <li>V Revizaku v Nastavení klikněte na <strong>Odhlásit</strong>. Revizak smaže kalendář „Revizak“ včetně všech jeho událostí a zapomene token i e-mail.</li>
+    <li>Přístup lze kdykoli odebrat i přímo u Googlu na stránce <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+
+  <h2>Změny těchto zásad</h2>
+  <p>Když se změní to, jaké údaje Revizak zpracovává, aktualizujeme tento dokument a datum platnosti nahoře.</p>
+
+  <h2>Kontakt</h2>
+  <p>Dotazy k ochraně soukromí posílejte na <a href="mailto:revizak.aplikace@gmail.com">revizak.aplikace@gmail.com</a>.</p>
+
+  <footer>
+    <a href="index.html">Revizak — úvodní stránka</a>
+  </footer>
+</main>
+</body>
+</html>

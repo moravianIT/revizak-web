@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revizak — program pro revizního technika</title>
+<meta name="description" content="Revizak je desktopový program pro revizního technika elektro: přehled revizí, lhůt a zakázek a jejich termíny v Google Kalendáři v telefonu.">
+<style>
+  :root { --ink: #1c2126; --muted: #5c636b; --paper: #fbfaf7; --line: #ddd8ce; --amber: #b36a00; }
+  html { background: var(--paper); }
+  body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; color: var(--ink); line-height: 1.6; margin: 0; }
+  .page { max-width: 760px; margin: 0 auto; padding: 48px 24px 72px; }
+  .eyebrow { font-family: Consolas, monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); }
+  h1 { font-size: 40px; line-height: 1.1; margin: 6px 0 12px; }
+  h2 { font-size: 22px; margin: 40px 0 8px; }
+  header { border-bottom: 3px solid var(--ink); padding-bottom: 24px; margin-bottom: 32px; }
+  .lead { color: var(--muted); font-size: 18px; margin: 0; }
+  a { color: var(--amber); }
+  footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <div class="eyebrow">Revizak</div>
+    <h1>Program pro revizního technika elektro</h1>
+    <p class="lead">Revizak hlídá lhůty revizí, eviduje zakázky a posílá jejich termíny do kalendáře v telefonu.</p>
+  </header>
+
+  <h2>Co Revizak dělá</h2>
+  <ul>
+    <li>Načítá revizní zprávy, které technik ukládá jako PDF do složky v počítači.</li>
+    <li>Vede přehled klientů, objektů a revizí a ukazuje, kterým revizím se blíží konec platnosti.</li>
+    <li>Eviduje zakázky a jejich stav.</li>
+    <li>Na přání technika zapisuje termíny revizí a zakázek do jeho Google Kalendáře, aby je měl v telefonu.</li>
+  </ul>
+
+  <h2>Kde běží a kde jsou data</h2>
+  <p>Revizak je program pro Windows. Všechna data jsou uložená jen v počítači technika. Revizak nemá žádný server a data nikam neposílá. Jedinou výjimkou je Google Kalendář, a to jen když se k němu technik sám přihlásí.</p>
+
+  <h2>Napojení na Google Kalendář</h2>
+  <p>Technik se v Nastavení přihlásí svým Google účtem. Revizak mu založí samostatný kalendář <strong>„Revizak“</strong> a zapisuje termíny jen do něj. K ostatním kalendářům technika ani k jiným službám Googlu přístup nemá. Po odhlášení Revizak tento kalendář smaže.</p>
+  <p>Podrobnosti o tom, jaké údaje Revizak od Googlu dostává a co s nimi dělá, jsou v dokumentu <a href="soukromi.html">Zásady ochrany soukromí</a>.</p>
+
+  <h2>Kontakt</h2>
+  <p>Program vyvíjí MoravianIT. Kontakt: <a href="mailto:revizak.aplikace@gmail.com">revizak.aplikace@gmail.com</a></p>
+
+  <footer>
+    <a href="soukromi.html">Zásady ochrany soukromí</a>
+  </footer>
+</main>
+</body>
+</html>
